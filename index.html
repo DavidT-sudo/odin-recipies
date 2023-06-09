@@ -4,19 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./index.css" rel="stylesheet"/>
     <title>Document</title>
 </head>
 <body>
-    <h1 id="heading">Odin Recipes</h1>
-    <img src="index1.jpg" alt="recipe cookbook image" />
-    <p>Try these recipes</p>
-    <ul>
-    <li><a href="./recipes/italian_chicken_marinade.html">Italian chicken marinade</a></li>
-    <li><a href="./recipes/croissant_french_toast.html">Croissant French toast</li>
-    <li><a href="./recipes/orange_cinnamon_rolls.html">Orange Cinnamon rolls</li>
-    </ul>
 
-    <a href="#heading">Back to top</a>
+    <h1 id="heading">Odin Recipes</h1>
+
+    <div class="img-container">
+        <img class="welcome-img" src="index1.jpg" alt="recipe cookbook image" />
+    </div>
+
+    <h1>Try these recipes</h1>
+
+    <div class="flex-box">
+        <div class="recipe-card">
+            
+            <div class="recipe-imgdiv">
+                <img class="food-img" src="./recipes/icm.jpg"/>
+            </div>
+
+            <div class="recipe-summary">
+                <h4>Italian chicken marinade</h4>
+                <h5>Super simple but delicious way to add flavor before grilling.</h5>
+                <a href="./recipes/italian_chicken_marinade.html">
+                    <button>Select</button>
+                </a>
+            </div>      
+        </div>
+
+        <div class="recipe-card">
+            <div class="recipe-imgdiv">
+                <img class="food-img" src="./recipes/ocr.webp"/>
+            </div>
+
+            <div class="recipe-summary">
+                <h4> Cinnamon rolls</h4>
+                <h5>Wonderfully tender, sweet, and sticky</h5>
+                <small>
+                    Covered in a gooey and super sticky orange cream cheese glaze, 
+                    they are an amazing brunch treat that will make your entire house smell incredibly fragrant.
+                </small> 
+                <a href="./recipes/orange_cinnamon_rolls.html">
+                    <button>Select</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <div class="recipe-imgdiv">
+                <img class="food-img" src="./recipes/cft.webp"/>
+            </div>
+
+            <div class="recipe-summary">
+                <h4>Croissant French toast</h4>
+                <h5>An easy and impressive breakfast or brunch</h5>
+                <small>This recipe is the perfect choice for special occasions or holidays.
+                    Serve warm with your favorite toppings. Some suggestions are powdered sugar, chopped nuts, 
+                    cinnamon sugar, berries, maple syrup, blueberry or strawberry syrup, and whipped cream.</small>
+                <a href="./recipes/croissant_french_toast.html">
+                    <button>Select</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="recipe-card"></div>
     
+    </div>
+
+
+    
+    <div class="nav-bottom">
+        <a href="#heading">Back to top</a>
+    </div>
+
 </body>
 </html>
